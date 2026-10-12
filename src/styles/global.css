@@ -143,3 +143,19 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.015
 .links a { text-decoration: none; }
 .contact-links { margin-top: 24px; }
 .contact-links a { color: var(--accent); }
+
+/* about: timeline & credentials */
+.timeline { list-style: none; margin: 8px 0 0; padding: 0; border-top: 1px solid var(--rule); }
+.timeline li { display: grid; grid-template-columns: 1fr; gap: 6px; padding: 24px 0; border-bottom: 1px solid var(--rule); }
+@media (min-width: 640px) { .timeline li { grid-template-columns: 11rem 1fr; gap: 24px; } }
+.tl-meta { display: flex; flex-direction: column; gap: 4px; }
+@media (max-width: 639px) { .tl-meta { flex-direction: row; flex-wrap: wrap; gap: 4px 12px; } }
+.tl-period { font-size: .85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tl-industry { font-size: .78rem; color: var(--accent); letter-spacing: .02em; }
+.timeline h3 { font-size: 1.25rem; margin: 0; }
+.tl-org { margin: 2px 0 8px; font-weight: 500; font-size: .95rem; }
+.tl-summary { margin: 0; color: var(--muted); font-size: .95rem; }
+.credentials { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; column-gap: 40px; }
+@media (min-width: 640px) { .credentials { grid-template-columns: 1fr 1fr; } }
+.credentials li { padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: .95rem; }
+.contact-note { color: var(--muted); max-width: var(--measure); margin: 16px 0 0; }

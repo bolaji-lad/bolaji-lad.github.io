@@ -1,19 +1,31 @@
 ---
 title: About
-description: Who I am and what I work on.
+description: Cybersecurity leader who turns cyber risk into business decisions, with experience across aerospace, telecoms, online gaming, IT services and enterprise AI.
 ---
 
-I'm Bolaji Ladokun. I work in cybersecurity, where most of my time goes into turning security goals into systems that run reliably day to day.
+Cybersecurity fails when it's treated as a purely technical problem. Lasting security comes from strategy, culture and leadership buy-in, not just from tools.
 
-My work spans the whole programme rather than one tool or one layer:
+I'm Bolaji Ladokun, Head of Cyber Security at INXM, based in Germany. Over more than ten years I've moved from the security operations centre to architecture to leadership. That path gives me an end-to-end view of how cyber risk actually affects business performance, from an individual alert all the way to a board decision.
 
-- **Governance and compliance**: information security management systems, risk registers, policies and audits that reflect how the organisation actually operates.
-- **Identity, devices and cloud**: single sign-on, conditional access, device management and cloud posture, which is where most real-world attacks start.
-- **Detection and response**: getting the right signals into a SIEM, tuning them so they are worth acting on, and testing the result with real attack simulations.
-- **AI and automation**: making it safe for teams to adopt AI agents, with clear supervision, permissions and accountability.
+## What I bring
 
-I care about security that the people it protects can live with. A control nobody can follow is not a control.
+My background combines computer science and an MSc in Cybersecurity with an MBA from WHU. That lets me work at the point where technology, strategy and leadership meet:
 
-## Get in touch
+- **Aligning security with business objectives**, so the programme supports growth and transformation instead of competing with it.
+- **Advising on risk, resilience and regulatory readiness**, with priorities leadership can weigh against other business risks.
+- **Translating technical complexity into board-level insight**: what the risk is, what it would cost, and which decision is needed.
+- **Enabling secure innovation**, including the governance that lets organisations adopt AI quickly and responsibly.
 
-The best way to reach me is through the links below. I'm happy to talk about security leadership, building programmes from scratch, or anything I've written here.
+## How I work
+
+**Start from the business, not the tool.** The first question is what the organisation needs to protect in order to grow. Technology choices follow from that.
+
+**Make risk decision-ready.** A risk register is only useful if it changes what leadership decides. I frame cyber risk in terms of impact, likelihood and cost, so it can be compared with every other business risk.
+
+**Build security people can live with.** Controls that slow everyone down get worked around. Good security fits how teams actually work.
+
+**Lead through change.** Security matters most when an organisation is scaling, transforming or adopting new technology, which is exactly when it's hardest to get right.
+
+## Across industries
+
+Each sector carries different risks, regulators and pace, but the same discipline applies everywhere: understand the business, prioritise what matters, and make security part of how the organisation runs.

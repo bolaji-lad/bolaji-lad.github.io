@@ -1,29 +1,29 @@
 {
   "name": "Bolaji Ladokun",
-  "role": "Security leader",
-  "headline": "Security that holds up in practice, not just on paper.",
-  "intro": "I build and run security programmes end to end: identity and cloud, detection and response, governance and compliance, and the new questions that AI agents raise. I write here about what actually works when policy meets real systems and real people.",
+  "role": "Cybersecurity strategy & leadership",
+  "headline": "Turning cyber risk into business decisions.",
+  "intro": "I'm a cybersecurity leader with more than ten years across aerospace, telecoms, online gaming, IT services and enterprise AI. I help organisations treat security as a strategic enabler: aligned with business goals, understood by the board, and built to support growth rather than slow it down.",
   "focus": [
     {
-      "title": "Security strategy & governance",
-      "text": "Building an ISMS that people use: risk, policy, ISO 27001 controls and audit readiness without the theatre."
+      "title": "Security & IT strategy",
+      "text": "Roadmaps that start from business objectives, so security investment follows the risks that matter most to growth."
     },
     {
-      "title": "Identity & cloud",
-      "text": "Zero-trust identity, device compliance and posture management across Microsoft and multi-cloud estates."
+      "title": "Risk, governance & regulation",
+      "text": "Risk management and governance that turn regulatory readiness into an advantage instead of a scramble before the audit."
     },
     {
-      "title": "Detection & resilience",
-      "text": "SIEM, incident response and offensive testing, so you find the gaps before someone else does."
+      "title": "Resilience & security operations",
+      "text": "Security architecture, detection and business continuity designed around how the organisation actually runs."
     },
     {
-      "title": "AI governance",
-      "text": "Letting teams use AI agents safely: guardrails, supervision and accountability that keep up with the technology."
+      "title": "Secure AI adoption",
+      "text": "Letting the business move quickly with AI, with the guardrails, accountability and oversight that make it safe."
     }
   ],
   "links": {
+    "linkedin": "https://www.linkedin.com/in/bolaji-ladokun/",
     "github": "https://github.com/bolaji-lad",
-    "linkedin": "",
     "email": "",
     "x": ""
   }

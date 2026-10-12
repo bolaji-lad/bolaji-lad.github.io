@@ -61,6 +61,22 @@ collections:
               - { name: linkedin, label: LinkedIn URL, widget: string, required: false }
               - { name: x, label: X URL, widget: string, required: false }
               - { name: email, label: Public email, widget: string, required: false }
+      - name: profile
+        label: Experience & credentials
+        file: src/data/profile.json
+        format: json
+        fields:
+          - name: experience
+            label: Experience (newest first)
+            widget: list
+            summary: '{{role}} · {{org}}'
+            fields:
+              - { name: period, label: Period, widget: string, hint: 'e.g. 2021 – 2024' }
+              - { name: role, label: Role, widget: string }
+              - { name: org, label: Organisation, widget: string }
+              - { name: industry, label: Industry, widget: string }
+              - { name: summary, label: Summary, widget: text }
+          - { name: credentials, label: Education & credentials, widget: list }
       - name: about
         label: About page
         file: src/content/pages/about.md

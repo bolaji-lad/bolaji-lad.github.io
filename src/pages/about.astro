@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
+import profile from '../data/profile.json';
 import { getEntry, render } from 'astro:content';
 const page = (await getEntry('pages', 'about'))!;
 const { Content } = await render(page);
@@ -9,9 +10,34 @@ const labels: Record<string, string> = { github: 'GitHub', linkedin: 'LinkedIn',
 ---
 <Base title={page.data.title} description={page.data.description}>
   <p class="eyebrow">{page.data.title}</p>
-  <h1 class="display">{site.name}</h1>
+  <h1 class="display">Security as a strategic enabler, not a cost centre.</h1>
   <div class="prose"><Content /></div>
-  <ul class="links contact-links">
-    {links.map(([k, v]) => <li><a href={k === 'email' ? `mailto:${v}` : v} rel="me noopener">{labels[k] ?? k}</a></li>)}
-  </ul>
+
+  <ol class="timeline">
+    {profile.experience.map((e) => (
+      <li>
+        <div class="tl-meta"><span class="tl-period">{e.period}</span><span class="tl-industry">{e.industry}</span></div>
+        <div>
+          <h3>{e.role}</h3>
+          <p class="tl-org">{e.org}</p>
+          <p class="tl-summary">{e.summary}</p>
+        </div>
+      </li>
+    ))}
+  </ol>
+
+  <section class="section">
+    <div class="section-head"><h2>Education & credentials</h2></div>
+    <ul class="credentials">
+      {profile.credentials.map((c) => <li>{c}</li>)}
+    </ul>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Get in touch</h2></div>
+    <p class="contact-note">I'm always happy to talk about security strategy, leadership, and building security programmes that support the business. LinkedIn is the best place to reach me.</p>
+    <ul class="links contact-links">
+      {links.map(([k, v]) => <li><a href={k === 'email' ? `mailto:${v}` : v} rel="me noopener">{labels[k] ?? k}</a></li>)}
+    </ul>
+  </section>
 </Base>

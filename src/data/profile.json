@@ -1,0 +1,47 @@
+{
+  "experience": [
+    {
+      "period": "2026 – present",
+      "role": "Head of Cyber Security",
+      "org": "INXM",
+      "industry": "Enterprise AI",
+      "summary": "Leading the security programme of an enterprise AI company: governance and risk, cloud and identity, and the controls that let customers adopt AI agents with confidence."
+    },
+    {
+      "period": "2024 – 2026",
+      "role": "Senior Information & Cyber Security Architect",
+      "org": "Isar Aerospace",
+      "industry": "Aerospace & space launch",
+      "summary": "Information and cyber security architecture for a rocket manufacturing and launch company, balancing protection of critical technology with the pace of a fast-scaling engineering organisation."
+    },
+    {
+      "period": "2021 – 2024",
+      "role": "Cyber Security Architect, Threat Intelligence",
+      "org": "Verizon",
+      "industry": "Telecoms & managed security",
+      "summary": "Developed detection use cases and SOAR deployments for a global managed security service provider, improving how threats were detected and handled for enterprise clients."
+    },
+    {
+      "period": "2020",
+      "role": "Lead Security Engineer",
+      "org": "Yolo Group",
+      "industry": "Online gaming",
+      "summary": "Led the development of a company-wide cybersecurity roadmap, aligning security measures with the business's growth strategy."
+    },
+    {
+      "period": "2017 – 2020",
+      "role": "Cyber Security Engineer, previously Analyst",
+      "org": "AFS IT Services Estonia",
+      "industry": "IT services",
+      "summary": "Built and ran the security operations centre's use-case library, focused SOC effort where it had most impact, and managed Active Directory and role-based access for production systems."
+    }
+  ],
+  "credentials": [
+    "MBA, WHU – Otto Beisheim School of Management",
+    "MSc Cybersecurity",
+    "Organisational Leadership, Columbia Business School Executive Education",
+    "CISSP (ISC2)",
+    "CCSP (ISC2)",
+    "GIAC Defending Advanced Threats (GDAT)"
+  ]
+}
