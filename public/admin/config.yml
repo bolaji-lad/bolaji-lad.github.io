@@ -1,0 +1,71 @@
+backend:
+  name: github
+  repo: bolaji-lad/bolaji-lad.github.io
+  branch: main
+  commit_messages:
+    create: 'content: create {{collection}} "{{slug}}"'
+    update: 'content: update {{collection}} "{{slug}}"'
+    delete: 'content: delete {{collection}} "{{slug}}"'
+    uploadMedia: 'content: upload "{{path}}"'
+    deleteMedia: 'content: delete "{{path}}"'
+
+site_url: https://bolaji-lad.github.io
+display_url: https://bolaji-lad.github.io
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: blog
+    label: Blog posts
+    label_singular: Post
+    folder: src/content/blog
+    extension: md
+    format: frontmatter
+    create: true
+    slug: '{{slug}}'
+    summary: '{{title}} · {{date}}{{draft | ternary(" · draft", "")}}'
+    sortable_fields: [date, title]
+    preview_path: blog/{{slug}}/
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Summary, widget: text, hint: 'One or two sentences. Shown in lists, search results and link previews.' }
+      - { name: date, label: Publish date, widget: datetime, date_format: YYYY-MM-DD, time_format: false, format: YYYY-MM-DD }
+      - { name: updated, label: Last updated, widget: datetime, date_format: YYYY-MM-DD, time_format: false, format: YYYY-MM-DD, required: false }
+      - { name: tags, label: Tags, widget: list, required: false, default: [] }
+      - { name: draft, label: Draft (hidden from the live site), widget: boolean, default: true }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: site
+    label: Site content
+    files:
+      - name: settings
+        label: Home page & links
+        file: src/data/site.json
+        format: json
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: role, label: Role line, widget: string }
+          - { name: headline, label: Home headline, widget: string }
+          - { name: intro, label: Intro paragraph, widget: text }
+          - name: focus
+            label: What I work on
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+          - name: links
+            label: Links (leave blank to hide)
+            widget: object
+            fields:
+              - { name: github, label: GitHub URL, widget: string, required: false }
+              - { name: linkedin, label: LinkedIn URL, widget: string, required: false }
+              - { name: x, label: X URL, widget: string, required: false }
+              - { name: email, label: Public email, widget: string, required: false }
+      - name: about
+        label: About page
+        file: src/content/pages/about.md
+        format: frontmatter
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: string, required: false }
+          - { name: body, label: Body, widget: markdown }

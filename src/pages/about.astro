@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
+import { getEntry, render } from 'astro:content';
+const page = (await getEntry('pages', 'about'))!;
+const { Content } = await render(page);
+const links = Object.entries(site.links).filter(([, v]) => v);
+const labels: Record<string, string> = { github: 'GitHub', linkedin: 'LinkedIn', x: 'X', email: 'Email' };
+---
+<Base title={page.data.title} description={page.data.description}>
+  <p class="eyebrow">{page.data.title}</p>
+  <h1 class="display">{site.name}</h1>
+  <div class="prose"><Content /></div>
+  <ul class="links contact-links">
+    {links.map(([k, v]) => <li><a href={k === 'email' ? `mailto:${v}` : v} rel="me noopener">{labels[k] ?? k}</a></li>)}
+  </ul>
+</Base>

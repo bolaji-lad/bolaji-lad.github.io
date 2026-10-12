@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import PostList from '../components/PostList.astro';
+import site from '../data/site.json';
+import { getPosts } from '../lib';
+const posts = (await getPosts()).slice(0, 5);
+---
+<Base>
+  <p class="eyebrow">{site.name} · {site.role}</p>
+  <h1 class="display">{site.headline}</h1>
+  <p class="lede">{site.intro}</p>
+
+  <section class="section">
+    <div class="section-head"><h2>What I work on</h2><a href="/about/">More about me →</a></div>
+    <div class="focus">
+      {site.focus.map((f) => <div><h3>{f.title}</h3><p>{f.text}</p></div>)}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Recent writing</h2><a href="/blog/">All posts →</a></div>
+    <PostList posts={posts} />
+  </section>
+</Base>

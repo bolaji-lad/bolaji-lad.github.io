@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import { getPosts } from '../../lib';
+const posts = await getPosts();
+---
+<Base title="Writing" description="Notes and essays on security leadership, identity, cloud and AI governance.">
+  <p class="eyebrow">Writing</p>
+  <h1 class="display">Notes from the field</h1>
+  <p class="lede">On security leadership, identity, cloud and AI governance: what works, what doesn't, and why.</p>
+  <section class="section"><PostList posts={posts} /></section>
+</Base>
