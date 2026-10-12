@@ -9,7 +9,7 @@ I'm Bolaji Ladokun, Head of Cyber Security at INXM, based in Germany. Over more 
 
 ## What I bring
 
-My background combines computer science and an MSc in Cybersecurity with an MBA from WHU. That lets me work at the point where technology, strategy and leadership meet:
+My background combines computer science and an MSc in Cybersecurity from Tallinn University of Technology with an MBA from WHU – Otto Beisheim School of Management. That lets me work at the point where technology, strategy and leadership meet:
 
 - **Aligning security with business objectives**, so the programme supports growth and transformation instead of competing with it.
 - **Advising on risk, resilience and regulatory readiness**, with priorities leadership can weigh against other business risks.
